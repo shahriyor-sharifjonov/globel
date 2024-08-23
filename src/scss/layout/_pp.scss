@@ -24,12 +24,16 @@
         font-weight: 500;
         @include res('font-size', 30px);
         @include media(576){
+            &.sm{
+                @include resa('max-width', 200px);
+            }
             @include resa('font-size', 26px);
         }
     }
     &__link{
         color: #FF8964;
         text-decoration: none;
+        text-align: right;
         @include res('font-size', 16px);
         @include res('line-height', 28px);
         @include media(576){

@@ -76,6 +76,22 @@ ul{
             @include resa('width', 196px);
             @include resa('height', 55px);
         }
+        &2{
+            color: #FF8964;
+            text-decoration: none;
+            @include res('margin-top', 32px);
+            @include res('font-size', 16px);
+            @include res('line-height', 28px);
+            @include media(576){
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                display: block;
+                @include resa('margin-top', 30px);
+                @include resa('font-size', 16px);
+                @include resa('line-height', 28px);
+            }
+        }
     }
 }
 .product{

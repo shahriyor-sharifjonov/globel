@@ -631,6 +631,7 @@
 .pp__link {
   color: #FF8964;
   text-decoration: none;
+  text-align: right;
   font-size: 0.8333333333vw;
   line-height: 1.4583333333vw;
 }
@@ -975,6 +976,14 @@ ul {
   margin-top: 2.0833333333vw;
   width: 10.2083333333vw;
   height: 2.8645833333vw;
+}
+
+.products__btn2 {
+  color: #FF8964;
+  text-decoration: none;
+  margin-top: 1.6666666667vw;
+  font-size: 0.8333333333vw;
+  line-height: 1.4583333333vw;
 }
 
 .product {
@@ -1409,6 +1418,10 @@ ul {
     font-size: 6.6326530612vw;
   }
 
+  .pp__title.sm {
+    max-width: 51.0204081633vw;
+  }
+
   .pp__link {
     font-size: 4.0816326531vw;
     line-height: 7.1428571429vw;
@@ -1576,6 +1589,16 @@ ul {
     margin-top: 10.2040816327vw;
     width: 50vw;
     height: 14.0306122449vw;
+  }
+
+  .products__btn2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-top: 7.6530612245vw;
+    font-size: 4.0816326531vw;
+    line-height: 7.1428571429vw;
   }
 
   .product {

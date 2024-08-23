@@ -33,11 +33,72 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border-bottom: solid #E0E0E0;
+        @include res('padding-left', 63px);
+        @include res('border-width', 1px);
+        &-left{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex: 1 1 auto;
+        }
+        &-link{
+            @include res('padding-top', 13px);
+            @include res('padding-bottom', 13px);
+            @include res('padding-left', 16px);
+            @include res('padding-right', 16px);
+            @include res('font-size', 16px);
+            height: 100%;
+            font-weight: 500;
+            color: #464343;
+            &.active{
+                background: #F2F2F2;
+                color: #D15573;
+            }
+        }
+        &-right{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            @include res('gap', 30px);
+        }
+        &-btn{
+            font-weight: 600;
+            @include res('font-size', 17px);
+        }
+    }
+    &__lang{
+        position: relative;
+        &-btn{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-transform: uppercase;
+            color: #6B6B6B;
+            line-height: 80%;
+            @include res('font-size', 16px);
+            @include res('gap', 2px);
+        }
+        svg{
+            &:nth-child(1){
+                @include res('width', 38.25px);
+                @include res('height', 27px);
+                @include res('margin-right', 6px);
+            }
+            &:nth-child(2){
+                @include res('width', 12px);
+                @include res('height', 9px);
+                @include res('margin-bottom', -2px);
+            }
+        }
     }
     &__bot{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include res('padding-left', 80px);
+        @include res('padding-top', 14px);
+        @include res('padding-bottom', 14px);
     }
     &__list{
         display: flex;

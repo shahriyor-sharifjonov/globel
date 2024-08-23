@@ -1,0 +1,43 @@
+// Тема по умолчанию
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Commissioner', sans-serif;
+    &:focus,
+    &:active{
+        outline: none;
+    }
+} 
+html,
+body{
+    height: 100%;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    .main{
+        flex: 1 1 auto;
+    }
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+button{
+    border: none;
+    background: none;
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0;
+}
+ul{
+    list-style-type: none;
+}

@@ -1,0 +1,120 @@
+@import '../abstracts/mixins.scss';
+.pp{
+    @include res('padding-top', 80px);
+    @include res('padding-bottom', 80px);
+    @include media(576){
+        @include resa('padding-top', 80px);
+        @include resa('padding-bottom', 80px);
+    }
+    &.pt0{
+        padding-top: 0;
+    }
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include res('margin-bottom', 25px);
+        @include res('gap', 15px);
+        @include media(576){
+            @include resa('gap', 15px);
+            @include resa('margin-bottom', 25px);
+        }
+    }
+    &__title{
+        font-weight: 500;
+        @include res('font-size', 30px);
+        @include media(576){
+            @include resa('font-size', 26px);
+        }
+    }
+    &__link{
+        color: #FF8964;
+        text-decoration: none;
+        @include res('font-size', 16px);
+        @include res('line-height', 28px);
+        @include media(576){
+            @include resa('font-size', 16px);
+            @include resa('line-height', 28px);
+        }
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        @include res('gap', 15px);
+        @include media(576){
+            @include resa('gap', 15px);
+        }
+    }
+    &__item{
+        border: solid #D3D3D3;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include res('gap', 10px);
+        @include res('border-radius', 6px);
+        @include res('width', 270px);
+        @include res('border-width', 1px);
+        @include res('padding-top', 13px);
+        @include res('padding-bottom', 13px);
+        @include res('padding-left', 10px);
+        @include res('padding-right', 23px);
+        @include media(576){
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            @include resa('gap', 10px);
+            @include resa('border-radius', 6px);
+            @include resa('width', 173px);
+            @include resa('border-width', 1px);
+            @include resa('padding-top', 13px);
+            @include resa('padding-bottom', 13px);
+            @include resa('padding-left', 10px);
+            @include resa('padding-right', 10px);
+        }
+        &-img{
+            line-height: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            @include res('width', 60px);
+            @include res('height', 60px);
+            @include media(576){
+                @include resa('width', 50px);
+                @include resa('min-width', 50px);
+                @include resa('height', 50px);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-content{
+            display: flex;
+            flex-direction: column;
+            @include res('gap', 7px);
+            @include media(576){
+                @include resa('gap', 7px);
+            }
+        }
+        &-title{
+            color: #252525;
+            font-weight: 600;
+            line-height: 112%;
+            @include res('font-size', 16px);
+            @include media(576){
+                @include resa('font-size', 16px);
+            }
+        }
+        &-p{
+            color: #7D7B7B;
+            @include res('font-size', 16px);
+            @include res('line-height', 18px);
+            @include media(576){
+                @include resa('font-size', 16px);
+                @include resa('line-height', 18px);
+            }
+        }
+    }
+}

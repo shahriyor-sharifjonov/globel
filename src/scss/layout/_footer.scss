@@ -1,0 +1,167 @@
+@import "../abstracts/mixins";
+.footer{
+    border-top: solid #F95E49;
+    @include res('border-width', 1px);
+    @include res('padding-top', 48px);
+    @include media(576){
+        @include resa('border-width', 1px);
+        @include resa('padding-top', 48px);
+    }
+    &__top{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @include res('padding-bottom', 45px);
+        @include media(576){
+            flex-direction: column;
+            align-items: center;
+            @include resa('gap', 25px);
+            @include resa('padding-bottom', 45px);
+        }
+    }
+    &__col{
+        &:nth-child(4){
+            @include res('width', 220px);
+            @include media(576){
+                width: 100%;
+            }
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        @include res('gap', 8px);
+        @include media(576){
+            align-items: center;
+            justify-content: center;
+            @include resa('gap', 8px);
+        }
+    }
+    &__link{
+        color: #202024;
+        @include res('font-size', 16px);
+        @include res('line-height', 26px);
+        @include media(576){
+            text-align: center;
+            @include resa('font-size', 16px);
+            @include resa('line-height', 26px);
+        }
+    }
+    &__soc{
+        &-title{
+            font-weight: 700;
+            letter-spacing: 7%;
+            text-transform: uppercase;
+            @include res('margin-bottom', 5px);
+            @include res('font-size', 16px);
+            @include res('line-height', 28px);
+            @include media(576){
+                @include resa('margin-bottom', 12px);
+                @include resa('font-size', 16px);
+                @include resa('line-height', 28px);
+                text-align: center;
+            }
+        }
+        &-content{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            @include res('gap', 12px);
+            @include media(576){
+                justify-content: center;
+                @include resa('gap', 12px);
+            }
+        }
+        &-item{
+            @include res('width', 40px);
+            @include res('height', 40px);
+            line-height: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media(576){
+                @include resa('width', 40px);
+                @include resa('height', 40px);
+            }
+            svg, img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__bot{
+        display: flex;
+        @include res('gap', 160px);
+        @include res('padding-bottom', 60px);
+        @include media(576){
+            flex-direction: column;
+            @include resa('gap', 20px);
+            @include resa('padding-bottom', 60px);
+        }
+    }
+    &__copy{
+        @include res('font-size', 14px);
+        line-height: 130%;
+        color: #707070;
+        @include media(576){
+            @include resa('font-size', 14px);
+        }
+    }
+    &__info{
+        @include res('width', 220px);
+        @include res('min-width', 220px);
+        @include media(576){
+            @include resa('width', 220px);
+            @include res('min-width', 220px);
+        }
+        &-top{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            @include res('gap', 16px);
+            @include res('margin-bottom', 14px);
+            @include media(576){
+                @include resa('gap', 16px);
+                @include resa('margin-bottom', 14px);
+            }
+            svg{
+                line-height: 0;
+                @include res('width', 50px);
+                @include res('height', 44px);
+                @include media(576){
+                    @include resa('width', 50px);
+                    @include resa('height', 44px);
+                }
+            }
+            span{
+                @include res('font-size', 14px);
+                color: #787171;
+                @include media(576){
+                    @include resa('font-size', 14px);
+                }
+            }
+        }
+        &-bot{
+            line-height: 0;
+            @include res('width', 109.56px);
+            @include res('height', 23.54px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media(576){
+                @include resa('width', 109.56px);
+                @include resa('height', 23.54px);
+            }
+            svg{
+                @include res('width', 109.56px);
+                @include res('height', 23.54px);
+                @include media(576){
+                    @include resa('width', 109.56px);
+                    @include resa('height', 23.54px);
+                }
+            }
+        }
+    }
+}

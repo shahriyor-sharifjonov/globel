@@ -1,0 +1,23 @@
+// Главный Sass файл
+
+// Шрифты
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+// vendors
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// abstracts
+@import 
+    'abstracts/mixins';
+
+// layout
+@import 
+    'layout/header',
+    'layout/intro',
+    'layout/form',
+    'layout/pp',
+    'layout/footer';
+
+// themes
+@import 
+    'themes/theme';

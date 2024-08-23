@@ -1,0 +1,43 @@
+mixin item()
+    .pp__item 
+        .pp__item-img 
+            img(src="@img/pp.png", alt="" draggable="false")
+        .pp__item-content 
+            p.pp__item-title Михаил Басманов
+            p.pp__item-p 4 предлжения
+
+mixin pp()
+    section.pp
+        .pp__container.container 
+            .pp__header
+                h2.pp__title Риелторы
+                a(href="#!").pp__link Все риелторы 
+            .pp__content 
+                +item 
+                +item 
+                +item 
+                +item 
+                +item 
+                +item 
+                +item 
+                +item 
+                +item 
+                +item 
+            
+mixin pp2()
+    section.pp.pt0
+        .pp__container.container 
+            .pp__header
+                h2.pp__title Агентства
+                a(href="#!").pp__link Все агентства
+            .pp__content 
+                +item 
+                +item 
+                +item 
+                +item 
+                +item 
+                +item 
+                +item 
+                +item 
+                +item 
+                +item 

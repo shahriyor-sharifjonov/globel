@@ -1420,7 +1420,7 @@ ul {
 
   .product__title {
     font-size: 4.5918367347vw;
-    margin-bottom: 3.0612244898vw;
+    margin-bottom: 5.1020408163vw;
   }
 
   .product__title span {
@@ -1429,7 +1429,34 @@ ul {
   }
 
   .product__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     gap: 2.5510204082vw;
     margin-bottom: 2.806122449vw;
+  }
+
+  .product__sp {
+    font-size: 3.0612244898vw;
+    gap: 1.2755102041vw;
+  }
+
+  .product__sp svg {
+    width: 4.3367346939vw;
+    min-width: 4.3367346939vw;
+    height: 4.3367346939vw;
+  }
+
+  .product__sep {
+    display: none;
+    width: 1.0204081633vw;
+    height: 1.0204081633vw;
   }
 }

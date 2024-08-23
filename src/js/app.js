@@ -107,7 +107,6 @@ headerLinks.forEach(el => {
     menuToggle()
   })
 })
-
 document.querySelectorAll('.intro__drop-item').forEach((item) => {
     item.addEventListener('click', function() {
         const parent = item.closest('.intro__drop'); // Find the closest parent with the class .intro__drop
@@ -115,6 +114,10 @@ document.querySelectorAll('.intro__drop-item').forEach((item) => {
         const button = parent.querySelector('.intro__drop-button'); // Select the button within the parent
         
         hiddenInput.value = item.getAttribute('value'); // Set the value from the button's value attribute
-        button.textContent = item.textContent; // Update the button text to the selected item text
+        
+        // Update the button text while keeping the SVG intact
+        const svg = button.querySelector('svg'); // Get the SVG element
+        button.innerHTML = item.textContent; // Set the new text
+        button.appendChild(svg); // Reattach the SVG
     });
 });

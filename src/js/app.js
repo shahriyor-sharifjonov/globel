@@ -98,3 +98,11 @@ headerLinks.forEach(el => {
     menuToggle()
   })
 })
+
+document.querySelectorAll('.intro__drop-item').forEach((item) => {
+    item.addEventListener('click', function() {
+        const parent = item.closest('.intro__drop'); // Find the closest parent with the class .intro__drop
+        const hiddenInput = parent.querySelector('input[name="hiddenFieldName"]'); // Select the hidden input within the parent
+        hiddenInput.value = item.getAttribute('value'); // Set the value from the button's value attribute
+    });
+});

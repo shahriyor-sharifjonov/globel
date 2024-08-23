@@ -107,27 +107,83 @@
                 @include resa('font-size', 16px);
                 @include resa('gap', 4px);   
             }
-        }
-        svg{
-            &:nth-child(1){
-                @include res('width', 38.25px);
-                @include res('height', 27px);
-                @include res('margin-right', 6px);
-                @include media(576){
-                    @include resa('width', 26.775px);
-                    @include resa('height', 18.9px);
-                    @include resa('margin-right', 3px);
+            svg{
+                &:nth-child(1){
+                    @include res('width', 38.25px);
+                    @include res('height', 27px);
+                    @include res('margin-right', 6px);
+                    @include media(576){
+                        @include resa('width', 26.775px);
+                        @include resa('height', 18.9px);
+                        @include resa('margin-right', 3px);
+                    }
+                }
+                &:nth-child(2){
+                    @include res('width', 12px);
+                    @include res('height', 9px);
+                    @include res('margin-bottom', -2px);
+                    @include media(576){
+                        @include resa('width', 12px);
+                        @include resa('height', 9px);
+                        @include resa('margin-bottom', -2px);
+                    }
                 }
             }
-            &:nth-child(2){
-                @include res('width', 12px);
-                @include res('height', 9px);
-                @include res('margin-bottom', -2px);
-                @include media(576){
-                    @include resa('width', 12px);
-                    @include resa('height', 9px);
-                    @include resa('margin-bottom', -2px);
+            &.active{
+                svg:nth-child(2){
+                    transform: rotate(-180deg)
                 }
+                &~.header__lang-content{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        &-content{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 100ms ease-out;
+            z-index: 10;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            @include res('border-end-start-radius', 6px);
+            @include res('border-end-end-radius', 6px);
+            box-shadow: 0 15px 15px -14px #00000030;
+            @include media(576){
+                @include resa('top', 48px);
+                @include resa('border-end-start-radius', 6px);
+                @include resa('border-end-end-radius', 6px);
+            }
+        }
+        &-item{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            color: #808080;
+            @include res('gap', 4px);
+            @include res('font-size', 16px);
+            @include res('padding-bottom', 14px);
+            @include res('padding-left', 14px);
+            @include res('padding-right', 14px);
+            &:nth-child(1){
+                @include res('padding-top', 14px);
+            }
+            @include media(576){
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                @include resa('font-size', 12px);
+                @include resa('min-height', 32px);
+                @include resa('padding-top', 6px);
+                @include resa('padding-bottom', 6px);
+                @include resa('padding-left', 12px);
+                @include resa('padding-right', 12px);
             }
         }
     }
@@ -155,7 +211,7 @@
         text-transform: uppercase;
         @include res('font-size', 15px);
         @include media(576){
-            @include resa('font-size', 20px);
+            @include resa('font-size', 15px);
         }
     }
     &__icon{

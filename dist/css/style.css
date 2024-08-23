@@ -1163,6 +1163,10 @@ ul {
     display: none;
   }
 
+  .header__link {
+    font-size: 5.1020408163vw;
+  }
+
   .header__icon {
     display: none;
   }

@@ -154,6 +154,9 @@
         font-weight: 700;
         text-transform: uppercase;
         @include res('font-size', 15px);
+        @include media(576){
+            @include resa('font-size', 20px);
+        }
     }
     &__icon{
         display: flex;

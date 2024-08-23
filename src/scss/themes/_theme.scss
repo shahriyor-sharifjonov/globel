@@ -43,10 +43,16 @@ ul{
 }
 .products{
     @include res('padding-top', 80px);
+    @include media(576){
+        @include resa('padding-top', 60px);
+    }
     &__content{
         display: flex;
         flex-wrap: wrap;
         @include res('gap', 28px);
+        @include media(576){
+            @include resa('gap', 15px);
+        }
     }
     &__btn{
         margin-left: auto;
@@ -57,12 +63,19 @@ ul{
         text-align: center;
         color: #fff;
         line-height: 120%;
-        @include res('font-size', 16px);
         background: linear-gradient(0deg, #3d387a 0%, #9f3259 100%);
+        @include res('font-size', 16px);
         @include res('border-radius', 3px);
         @include res('margin-top', 40px);
         @include res('width', 196px);
         @include res('height', 55px);
+        @include media(576){
+            @include resa('font-size', 16px);
+            @include resa('border-radius', 3px);
+            @include resa('margin-top', 40px);
+            @include resa('width', 196px);
+            @include resa('height', 55px);
+        }
     }
 }
 .product{
@@ -72,6 +85,11 @@ ul{
     @include res('border-radius', 6px);
     @include res('width', 339px);
     @include res('border-width', 1px);
+    @include media(576){
+        @include resa('width', 173px);
+        @include resa('border-radius', 6px);
+        @include resa('border-width', 1px);
+    }
     &__like{
         position: absolute;
         display: flex;
@@ -79,9 +97,17 @@ ul{
         justify-content: center; 
         @include res('top', 12px);
         @include res('right', 12px);
+        @include media(576){
+            @include resa('top', 10px);
+            @include resa('right', 10px);
+        }
         svg{
             @include res('width', 40px);
             @include res('height', 40px);
+            @include media(576){
+                @include resa('width', 30px);
+                @include resa('height', 30px);
+            }
         }
     }
     &__img{
@@ -102,16 +128,30 @@ ul{
         @include res('padding-bottom', 21px);
         @include res('padding-left', 24px);
         @include res('padding-right', 24px);
+        @include media(576){
+            @include resa('padding-top', 8px);
+            @include resa('padding-bottom', 10px);
+            @include resa('padding-left', 12px);
+            @include resa('padding-right', 12px);
+        }
     }
     &__title{
         font-weight: 500;
         line-height: 120%;
         @include res('font-size', 20px);
         @include res('margin-bottom', 22px);
+        @include media(576){
+            @include resa('font-size', 18px);
+            @include resa('margin-bottom', 12px);
+        }
         span{
             display: block;
             @include res('font-size', 16px);
-            @include res('margin-top', 6px);
+            @include res('margin-top', 6px);    
+            @include media(576){
+                @include resa('font-size', 14px);
+                @include resa('margin-top', 6px); 
+            }
         }
     }
     &__info{
@@ -119,7 +159,11 @@ ul{
         align-items: center;
         justify-content: flex-start;
         @include res('gap', 10px);
-        @include res('margin-bottom', 11px);
+        @include res('margin-bottom', 11px);    
+        @include media(576){
+            @include resa('gap', 10px);
+            @include resa('margin-bottom', 11px);   
+        }
     }
     &__sp{
         display: flex;

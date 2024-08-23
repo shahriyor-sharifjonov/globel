@@ -183,7 +183,7 @@
         @include res('gap', 20px);  
         @include media(576){
             width: 100%;
-            border-top: solid #808080;
+            border-top: solid #d1d1d1;
             @include resa('gap', 20px);  
             @include resa('padding-top', 12px);
             @include resa('padding-bottom', 12px);

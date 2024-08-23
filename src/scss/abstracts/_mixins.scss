@@ -22,7 +22,7 @@ $baseValueSmall: 392px;
     #{$property}: calc(($value / $baseValueSmall) * 100vw);
 }
 
-.container{
+.ccontainer{
     width: 100%;
     margin-right: auto;
     margin-left: auto;

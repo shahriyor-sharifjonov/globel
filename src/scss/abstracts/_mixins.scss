@@ -26,7 +26,7 @@ $baseValueSmall: 392px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    @include res('max-width', 1440px);
+    @include res('max-width', 1470px);
     @include res('padding-right', 15px);
     @include res('padding-left', 15px);
     @include media(576){

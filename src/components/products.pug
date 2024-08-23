@@ -1,0 +1,20 @@
+include ./product 
+
+mixin products()
+    section.products 
+        .products__container.container 
+            .pp__header
+                h2.pp__title Риелторы
+                a(href="#!").pp__link Все риелторы 
+            .products__content 
+                +product
+                +product
+                +product
+                +product
+                +product
+                +product
+                +product
+                +product
+            button(type="button").products__btn Посмотреть еще
+
+

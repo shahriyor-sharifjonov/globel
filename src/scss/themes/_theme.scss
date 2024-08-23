@@ -41,3 +41,47 @@ p,h1,h2,h3,h4,h5,h6{
 ul{
     list-style-type: none;
 }
+.products{
+    @include res('padding-top', 80px);
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        @include res('gap', 28px);
+    }
+    &__btn{
+        @include res('margin-bottom', 80px);
+    }
+}
+.product{
+    border: solid #E2E2E2;
+    position: relative;
+    overflow: hidden;
+    @include res('border-radius', 6px);
+    @include res('width', 339px);
+    @include res('border-width', 1px);
+    &__like{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        @include res('top', 12px);
+        @include res('right', 12px);
+        svg{
+            @include res('width', 40px);
+            @include res('height', 40px);
+        }
+    }
+    &__img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

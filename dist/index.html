@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240823192007">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240823192509">
     <title>Document</title>
   </head>
   <body> 
@@ -275,20 +275,206 @@
       <main class="main"> 
                 <section class="intro"> 
                   <div class="intro__container container"> 
-                    <h1 class="intro__title">Снимите квартиру выгодно</h1>
+                    <h1 class="intro__title">Снимите квартиру выгодно </h1>
                     <div class="intro__content"> 
                       <div class="intro__tag"> 
-                        <button class="intro__tag-item active" type="button">Купить</button>
-                        <button class="intro__tag-item" type="button">Снять</button>
-                        <button class="intro__tag-item" type="button">Посуточно</button>
-                        <button class="intro__tag-item" type="button">Построить</button>
+                        <button class="intro__tag-item active" type="button" data-target="tab1">Купить</button>
+                        <button class="intro__tag-item" type="button" data-target="tab2">Снять</button>
+                        <button class="intro__tag-item" type="button" data-target="tab3">Посуточно</button>
+                        <button class="intro__tag-item" type="button" data-target="tab4">Построить</button>
                       </div>
-                      <div class="intro__wrap"> 
+                      <div class="intro__wrap active" id="tab1"> 
                         <div class="intro__drop"> 
                           <button class="intro__drop-button" type="button">
                             Квартиру <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> 
+                          </button>
+                          <div class="intro__drop-content"> 
+                            <button class="intro__drop-item" type="button" value="value1">Item 1</button>
+                            <button class="intro__drop-item" type="button" value="value2">Item 2</button>
+                            <button class="intro__drop-item" type="button" value="value3">Item 3</button>
+                            <button class="intro__drop-item" type="button" value="value4">Item 4</button>
+                            <input type="hidden" name="hiddenFieldName" value="">
+                          </div>
+                        </div>
+                        <div class="intro__drop"> 
+                          <button class="intro__drop-button" type="button">
+                            1,2 комн <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+                          </button>
+                          <div class="intro__drop-content"> 
+                            <button class="intro__drop-item" type="button" value="value1">Item 1</button>
+                            <button class="intro__drop-item" type="button" value="value2">Item 2</button>
+                            <button class="intro__drop-item" type="button" value="value3">Item 3</button>
+                            <button class="intro__drop-item" type="button" value="value4">Item 4</button>
+                            <input type="hidden" name="hiddenFieldName" value="">
+                          </div>
+                        </div>
+                        <div class="intro__drop"> 
+                          <button class="intro__drop-button" type="button">
+                            Цена<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                          </button>
+                          <div class="intro__drop-content"> 
+                            <button class="intro__drop-item" type="button" value="value1">Item 1</button>
+                            <button class="intro__drop-item" type="button" value="value2">Item 2</button>
+                            <button class="intro__drop-item" type="button" value="value3">Item 3</button>
+                            <button class="intro__drop-item" type="button" value="value4">Item 4</button>
+                            <input type="hidden" name="hiddenFieldName" value="">
+                          </div>
+                        </div>
+                        <div class="intro__drop"> 
+                          <button class="intro__drop-button" type="button">
+                            Город, адрес, метро, район, ж/д, шоссе или ЖК<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                          </button>
+                          <div class="intro__drop-content"> 
+                            <button class="intro__drop-item" type="button" value="value1">Item 1</button>
+                            <button class="intro__drop-item" type="button" value="value2">Item 2</button>
+                            <button class="intro__drop-item" type="button" value="value3">Item 3</button>
+                            <button class="intro__drop-item" type="button" value="value4">Item 4</button>
+                            <input type="hidden" name="hiddenFieldName" value="">
+                          </div>
+                        </div>
+                        <div class="intro__action"> 
+                          <button class="intro__btn" type="button">Найти</button>
+                          <button class="intro__link" type="button">Показать на карте</button>
+                        </div>
+                      </div>
+                      <div class="intro__wrap" id="tab2">
+                        <div class="intro__drop"> 
+                          <button class="intro__drop-button" type="button">
+                            Квартиру <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> 
+                          </button>
+                          <div class="intro__drop-content"> 
+                            <button class="intro__drop-item" type="button" value="value1">Item 1</button>
+                            <button class="intro__drop-item" type="button" value="value2">Item 2</button>
+                            <button class="intro__drop-item" type="button" value="value3">Item 3</button>
+                            <button class="intro__drop-item" type="button" value="value4">Item 4</button>
+                            <input type="hidden" name="hiddenFieldName" value="">
+                          </div>
+                        </div>
+                        <div class="intro__drop"> 
+                          <button class="intro__drop-button" type="button">
+                            1,2 комн <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                          </button>
+                          <div class="intro__drop-content"> 
+                            <button class="intro__drop-item" type="button" value="value1">Item 1</button>
+                            <button class="intro__drop-item" type="button" value="value2">Item 2</button>
+                            <button class="intro__drop-item" type="button" value="value3">Item 3</button>
+                            <button class="intro__drop-item" type="button" value="value4">Item 4</button>
+                            <input type="hidden" name="hiddenFieldName" value="">
+                          </div>
+                        </div>
+                        <div class="intro__drop"> 
+                          <button class="intro__drop-button" type="button">
+                            Цена<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                          </button>
+                          <div class="intro__drop-content"> 
+                            <button class="intro__drop-item" type="button" value="value1">Item 1</button>
+                            <button class="intro__drop-item" type="button" value="value2">Item 2</button>
+                            <button class="intro__drop-item" type="button" value="value3">Item 3</button>
+                            <button class="intro__drop-item" type="button" value="value4">Item 4</button>
+                            <input type="hidden" name="hiddenFieldName" value="">
+                          </div>
+                        </div>
+                        <div class="intro__drop"> 
+                          <button class="intro__drop-button" type="button">
+                            Город, адрес, метро, район, ж/д, шоссе или ЖК<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                          </button>
+                          <div class="intro__drop-content"> 
+                            <button class="intro__drop-item" type="button" value="value1">Item 1</button>
+                            <button class="intro__drop-item" type="button" value="value2">Item 2</button>
+                            <button class="intro__drop-item" type="button" value="value3">Item 3</button>
+                            <button class="intro__drop-item" type="button" value="value4">Item 4</button>
+                            <input type="hidden" name="hiddenFieldName" value="">
+                          </div>
+                        </div>
+                        <div class="intro__action"> 
+                          <button class="intro__btn" type="button">Найти</button>
+                          <button class="intro__link" type="button">Показать на карте</button>
+                        </div>
+                      </div>
+                      <div class="intro__wrap" id="tab3">
+                        <div class="intro__drop"> 
+                          <button class="intro__drop-button" type="button">
+                            Квартиру <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> 
+                          </button>
+                          <div class="intro__drop-content"> 
+                            <button class="intro__drop-item" type="button" value="value1">Item 1</button>
+                            <button class="intro__drop-item" type="button" value="value2">Item 2</button>
+                            <button class="intro__drop-item" type="button" value="value3">Item 3</button>
+                            <button class="intro__drop-item" type="button" value="value4">Item 4</button>
+                            <input type="hidden" name="hiddenFieldName" value="">
+                          </div>
+                        </div>
+                        <div class="intro__drop"> 
+                          <button class="intro__drop-button" type="button">
+                            1,2 комн <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                          </button>
+                          <div class="intro__drop-content"> 
+                            <button class="intro__drop-item" type="button" value="value1">Item 1</button>
+                            <button class="intro__drop-item" type="button" value="value2">Item 2</button>
+                            <button class="intro__drop-item" type="button" value="value3">Item 3</button>
+                            <button class="intro__drop-item" type="button" value="value4">Item 4</button>
+                            <input type="hidden" name="hiddenFieldName" value="">
+                          </div>
+                        </div>
+                        <div class="intro__drop"> 
+                          <button class="intro__drop-button" type="button">
+                            Цена<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                          </button>
+                          <div class="intro__drop-content"> 
+                            <button class="intro__drop-item" type="button" value="value1">Item 1</button>
+                            <button class="intro__drop-item" type="button" value="value2">Item 2</button>
+                            <button class="intro__drop-item" type="button" value="value3">Item 3</button>
+                            <button class="intro__drop-item" type="button" value="value4">Item 4</button>
+                            <input type="hidden" name="hiddenFieldName" value="">
+                          </div>
+                        </div>
+                        <div class="intro__drop"> 
+                          <button class="intro__drop-button" type="button">
+                            Город, адрес, метро, район, ж/д, шоссе или ЖК<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                          </button>
+                          <div class="intro__drop-content"> 
+                            <button class="intro__drop-item" type="button" value="value1">Item 1</button>
+                            <button class="intro__drop-item" type="button" value="value2">Item 2</button>
+                            <button class="intro__drop-item" type="button" value="value3">Item 3</button>
+                            <button class="intro__drop-item" type="button" value="value4">Item 4</button>
+                            <input type="hidden" name="hiddenFieldName" value="">
+                          </div>
+                        </div>
+                        <div class="intro__action"> 
+                          <button class="intro__btn" type="button">Найти</button>
+                          <button class="intro__link" type="button">Показать на карте</button>
+                        </div>
+                      </div>
+                      <div class="intro__wrap" id="tab4"> 
+                        <div class="intro__drop"> 
+                          <button class="intro__drop-button" type="button">
+                            Квартиру <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5L6 8.75L2.25 5" stroke="#98335C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> 
                           </button>
                           <div class="intro__drop-content"> 
                             <button class="intro__drop-item" type="button" value="value1">Item 1</button>
@@ -1183,6 +1369,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20240823192007"> </script>
+    <script src="js/app.min.js?_v=20240823192509"> </script>
   </body>
 </html>

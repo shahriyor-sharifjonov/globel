@@ -53,10 +53,13 @@
         }
     }
     &__wrap{
-        display: flex;
         background: #FFFFFF;
         @include res('border-radius', 6px);
         border-top-left-radius: 0;
+        display: none;
+        &.active{
+            display: flex;
+        }
         @include media(576){
             flex-wrap: wrap;
             @include resa('border-radius', 6px);

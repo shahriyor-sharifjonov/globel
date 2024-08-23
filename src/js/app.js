@@ -55,19 +55,28 @@ if (document.querySelector('.header__lang-btn')) {
     });
 }
 
-if(document.querySelectorAll('.intro__tag-item')){
-    const items = document.querySelectorAll('.intro__tag-item');
-
-    items.forEach(item => {
-        item.addEventListener('click', () => {
-            // Удаляем класс 'active' у всех элементов
-            items.forEach(i => i.classList.remove('active'));
-            
-            // Добавляем класс 'active' на кликнутый элемент
-            item.classList.add('active');
+document.querySelectorAll('.intro__tag-item').forEach((tabButton) => {
+    tabButton.addEventListener('click', function() {
+        // Remove the active class from all tab buttons
+        document.querySelectorAll('.intro__tag-item').forEach((btn) => {
+            btn.classList.remove('active');
         });
+
+        // Remove the active class from all tab content sections
+        document.querySelectorAll('.intro__wrap').forEach((tabContent) => {
+            tabContent.classList.remove('active');
+        });
+
+        // Add the active class to the clicked tab button
+        tabButton.classList.add('active');
+
+        // Get the target tab from the data attribute
+        const targetTab = tabButton.getAttribute('data-target');
+
+        // Add the active class to the corresponding tab content
+        document.getElementById(targetTab).classList.add('active');
     });
-}
+});
 
 
 const headerButton = document.querySelector(".header__button");
@@ -103,6 +112,9 @@ document.querySelectorAll('.intro__drop-item').forEach((item) => {
     item.addEventListener('click', function() {
         const parent = item.closest('.intro__drop'); // Find the closest parent with the class .intro__drop
         const hiddenInput = parent.querySelector('input[name="hiddenFieldName"]'); // Select the hidden input within the parent
+        const button = parent.querySelector('.intro__drop-button'); // Select the button within the parent
+        
         hiddenInput.value = item.getAttribute('value'); // Set the value from the button's value attribute
+        button.textContent = item.textContent; // Update the button text to the selected item text
     });
 });
